@@ -174,7 +174,6 @@ export default class MisDataExportCommandSet extends BaseListViewCommandSet<IMis
       Log.error(LOG_SOURCE, new Error(`Failed to log export action: ${error.message}`));
     }
   }
-
   // Helper function to get the user's ID based on their email
   private async _getUserId(email: string): Promise<number | null> {
     try {
@@ -185,4 +184,5 @@ export default class MisDataExportCommandSet extends BaseListViewCommandSet<IMis
       return null;
     }
   }
+  
 }
